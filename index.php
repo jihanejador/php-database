@@ -1,6 +1,10 @@
-<?php
-include("../includes/header.php"); 
-include 'includes/connection.php';
-?>
-<h1>Bienvenue sur EduSync</h1>
-<?php include("../includes/footer.php"); ?>
+<?php include 'includes/header.php'; ?>
+
+<div class="text-center mt-20">
+    <h2 class="text-3xl font-bold text-pink-700">Welcome to EduSync</h2>
+    <p class="mt-4 text-gray-600">
+        School Management System
+    </p>
+</div>
+
+<?php include 'includes/footer.php'; ?>
