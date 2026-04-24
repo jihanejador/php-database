@@ -102,7 +102,7 @@ CREATE TABLE users (
     role VARCHAR(50) DEFAULT 'user'
 );
 lencer :
-http://localhost/EduSync/public/index.php
+http://localhost/myphp/public/index.php
 Rôles Admin / User
 Dashboard stats
 Profil utilisateur
