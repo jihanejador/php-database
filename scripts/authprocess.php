@@ -14,5 +14,11 @@ if (isset($_POST['register'])){
         header("Location: ../public/register.php?error=empty");
         exit();
     }
-    
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO user (firstname, lastname, email, password)
+            VALUES('$firstname','lastname','email','$hashedPassword')";
+    if ($conn->query($sql)){
+        header("Location: ../public/login.php?success=1");
+    }
 }
